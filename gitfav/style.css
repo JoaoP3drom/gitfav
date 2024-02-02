@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-primary: 'Roboto', sans-serif;
+  --bg-color: #2F2F33;
+  --table-color: #092D38;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  color: #FFF;
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+#app {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 11.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+header img {
+  max-width: 18.6rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+.search input {
+  width: 46.2rem;
+  background-color: #06181C;
+  color: #7C7C8A;
+  padding: 1.6rem;
+  border: none;
+  max-height: 4.8rem;
+
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  font-size: 1.4rem;
+  padding: 1.4rem;
+  background-color: #065E7C;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.search button:hover {
+  filter: brightness(1.1);
+}
+
+table {
+  margin-top: 8.7rem;
+  width: 100%;
+  border: 1px solid #4A808C;
+}
+
+table * {
+  font-size: 2rem;
+}
+
+table th {
+  background: var(--table-color);
+  text-align: left;
+  font-weight: bold;
+  padding: 1.6rem 4rem;
+}
+
+table th:first-child {
+  border-top-left-radius: 1.2rem;
+}
+
+table th:last-child {
+  border-top-right-radius: .4rem
+}
+
+table td {
+  padding: 2.4rem 4rem;
+  text-align: left;
+}
+
+table tr:nth-child(even) {
+  background: #092d3893;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img {
+  width: 5.6rem;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+td.user a p {
+  font-weight: bold;
+}
+
+td .remove {
+  background: none;
+  border: none;
+  color: #F75A68;
+  font-weight: bold;
+  cursor: pointer;
+}
